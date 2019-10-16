@@ -8,10 +8,10 @@ var update = function(details) {
     return
   }
 
-  var numbers = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹']
+  var numbers = ['¹ ','² ','³ ','⁴ ','⁵ ','⁶ ','⁷ ','⁸ ','⁹ ']
 
-  if (newTitle && numbers.includes(newTitle[0])) {
-    newTitle = newTitle.substr(1)
+  if (newTitle && numbers.includes(newTitle.substr(0,2))) {
+    newTitle = newTitle.substr(2)
   }
 
   if(details.index < 8) {
